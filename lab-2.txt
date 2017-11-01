@@ -1,0 +1,55 @@
+1. Ознакомились с файловой структурой ОС Linux, изучили команды работы с файлами
+
+2. touch file1.txt
+   touch file2.txt
+   echo "abc" > file1.txt
+   echo "123" > file2.txt
+
+3. cat file1.txt file2.txt > file3.txt
+   cat file3.txt
+
+4. mkdir direct
+   mv file1.txt direct/file1.txt
+   mv file2.txt direct/file2.txt
+   mv file3.txt direct/file3.txt
+
+5. ls -lah
+   итого 96K
+   drwxrwxr-x  2 geo geo 4,0K окт  8 20:09 .
+   drwxr-xr-x 19 geo geo 4,0K окт  5 20:31 ..
+   -rw-rw-r--  1 geo geo    2 сен 25 13:03 file
+   -rw-rw-r--  1 geo geo 9,0K сен 24 16:42 lab-1.txt
+   -rw-rw-r--  1 geo geo    0 окт  8 20:09 lab-2.txt
+   -rw-r--r--  1 geo geo  12K окт  8 20:15 .lab-2.txt.swp
+   -rwxrwxr-x  1 geo geo 8,4K сен 24 16:38 main
+   -rw-rw-r--  1 geo geo   75 сен 24 16:37 main.c
+   -rw-------  1 geo geo  18K сен 24 16:20 nano.save
+   -rw-------  1 geo geo  12K сен 11 13:16 .swp
+   -rw-rw-r--  1 geo geo   38 окт  8 20:11 temp
+   -rw-rw-r--  1 geo geo   19 сен 11 13:54 testfile1.txt
+   -rw-rw-r--  1 geo geo   19 сен 11 13:54 testfile2.txt
+
+6. chmod g+x,o+x direct
+   chmod g+x,o+x direct/file*.txt
+
+7. ls -lah
+   ls direct -lah
+
+8. mkdir direct1
+
+9. ln direct/file3.txt direct0/ln_file3.txt
+
+10. ln -s direct/file3.txt direct/ln_s_file3.txt
+
+11. cd direct0
+    ls -lah
+
+12. cd ../direct
+    grep -rl 'qwerty' *
+
+13. who - список пользователей
+    top, htop - диспетчеры задач
+
+14. Отчёт сдан, файлы и каталоги удалены
+
+15. logout 
